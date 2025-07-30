@@ -8,7 +8,7 @@
 main {
     height: 100dvh;
     display: grid;
-    grid-template-rows: repeat(2, auto 1fr);
+    grid-template-rows: auto 1fr;
 }
 
 body {
@@ -27,7 +27,7 @@ text-transform: uppercase;
 }
 
 h2 {
-    font: var(--font-roboto-flex-label-medium);
+    font: var(  --font-roboto-flex-label-medium);
     text-transform: uppercase;
 
 }
@@ -44,4 +44,20 @@ p {
 h3 {
     font: var(--font-sora-display-small);
 }
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
 

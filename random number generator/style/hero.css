@@ -1,9 +1,9 @@
 
 
 section.hero {
-    display: grid;
-    grid-template-columns: repeat(2, 34rem);
-    justify-content: center;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     align-items: center;
    
     
@@ -15,6 +15,7 @@ section.hero {
  #aside-01 {
     display: grid;
     gap: 2.3rem;
+  
     
      
      & div:nth-child(1) {
@@ -23,19 +24,24 @@ section.hero {
 
     }
       & div:nth-child(2) {
+        min-width: 36rem;
         span {
             font: var(--font-sora-display-large);
         }
     }
       & div:nth-child(3) {
         display: flex;
+        gap: 1rem;
+        max-width: 30rem;
 
        & img {
             align-self: baseline;
         }
     }
        & div:nth-child(4) {
+         max-width: 30rem;
         display: flex;
+        gap: 1rem;
           & img {
             align-self: baseline;
         }
@@ -46,50 +52,111 @@ section.hero {
 
 #aside-02  {
     display: grid;
-   grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2.3rem;
+
+   & p {
+     font: var( --font-sora-paragraph-large);
+    }
+
+   & h3 {
+      color: var( --content-brand);
+    }
+
+
+    .animation-numeros-div {
+      max-width: 75%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      & span {
+        color: var(--content-secondary);
+      }
+      
+    }
+
      & div:nth-child(1) {
        
 
     }
-      & div:nth-child(2) {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       text-transform: uppercase;
-       gap: 1rem;
+     
+    
+     
+      
+
+
 
         & div {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;
+
+       
+         
+       
+          
+          
 
           & span {
               font: var(--font-sora-display-medium);
-              color: white;
-              background-color: var(--background-gray);
+             
               padding: 1rem;
               border-radius: 1rem;
+             
+              
               
             }
+
+            &  input {
+
+            width: 100%;
+            height: 5.5rem;
+            border: none;
+            background-color: var(--background-gray);
+             border-radius: 1rem;
+             text-align: center;
+
+             font: var(--font-sora-display-medium);
+             
+
+             
+
+          
+             
+        }
+
+                & input::placeholder {
+                  color: var(--content-secondary);
+                  /* substitua com a cor desejada */
+                }
+
         }
         
     }
       & div:nth-child(3) {
 
-        button {
+
+        
+    }
+
+
+
+
+            button {
             width: 100%;
-            height: 3.5rem;
+            height: 5.5rem;
             border: none;
             background-color: var(--background-gray);
              border-radius: 1rem;
              cursor: pointer;
-            span {
-                color:white;
-                
-            }
+             
+
+            &   span  {
+                color: var(--content-secondary);
+             }
         }
-        
-    }
-}
+
+
 
