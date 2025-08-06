@@ -15,13 +15,14 @@ function sanitizeAndValidate(input) {
 
     // Garante que esteja entre 1 e 100
     if (numericValue < 1 || isNaN(numericValue)) {
-        numericValue = "";
+        input.value = "";
+        return;
     } else if (numericValue > 100) {
         numericValue = 100;
     }
 
-    // Atualiza o input com o valor validado
-    input.value = numericValue;
+    // Formata com zero à esquerda se for menor que 10
+    input.value = numericValue < 10 ? "0" + numericValue : numericValue.toString();
 }
 
 // Validação em tempo real enquanto digita
