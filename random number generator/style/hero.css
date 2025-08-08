@@ -167,8 +167,25 @@ grid-template-columns: repeat(2, 1fr);
         .menu-resultado {
           width: 100%;
           text-align: center;
+
+          #numeros-sorteados {
+             padding-block: 1rem;
+          }
           h3 {
             min-width: 22rem;
+          }
+
+          ul { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+
+            & li span {
+              font: var( --font-sora-display-medium);
+             
+            }
           }
         }
 

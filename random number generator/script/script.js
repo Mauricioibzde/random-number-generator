@@ -49,6 +49,44 @@ btnRun.addEventListener("click", () => {
     console.log(sorteio)
     resultado.classList.remove("display-none")
 
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+let min = 1;
+let max = 100;
+
+let randomNumber1 = getRandomNumber(min, max);
+let randomNumber2 = getRandomNumber(min, max);
+
+console.log(randomNumber1 , randomNumber2);
+console.log(Math.floor(Math.random() * 100) + 1);
+
+
+let resultado_numeros_sorteados = document.querySelector("#numeros-sorteados")
+
+let resultadoNumber = document.createElement("ul")
+
+resultadoNumber.innerHTML = `
+  <li><span class="numero-01">${randomNumber1}</span></li>
+  <li><span class="numero-02">${randomNumber2}</span></li>
+
+
+
+
+`
+resultado_numeros_sorteados.appendChild(resultadoNumber)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 });
