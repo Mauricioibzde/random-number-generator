@@ -1,6 +1,7 @@
 let amount_01 = document.getElementById("amount-01");
 let amount_02 = document.getElementById("amount-02");
 
+
 const btnRun = document.getElementById("btn-run");
 
 function sanitizeAndValidate(input) {
@@ -34,6 +35,22 @@ btnRun.addEventListener("click", () => {
     sanitizeAndValidate(amount_01);
     sanitizeAndValidate(amount_02);
 
+  
+
+
+
+
     console.log("Valor 01:", amount_01.value);
     console.log("Valor 02:", amount_02.value);
+
+    let sorteio = document.querySelector(".menu-hidden-div")
+    let resultado = document.querySelector(".menu-resultado")
+    sorteio.classList.add("display-none")
+    console.log(sorteio)
+    resultado.classList.remove("display-none")
+
+
+    
 });
+
+  
