@@ -3,7 +3,7 @@
 section.hero {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 4rem;
     align-items: center;
     height: 100%;
     padding-bottom: 4rem;
@@ -158,6 +158,10 @@ grid-template-columns: repeat(2, 1fr);
              
             }
           }
+        }
+
+        #como-funciona-div {
+          max-width: 32rem;
         }
 
 
