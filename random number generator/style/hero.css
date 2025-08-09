@@ -27,14 +27,11 @@ grid-template-columns: repeat(2, 1fr);
     }
       & div:nth-child(2) {
         min-width: 36rem;
-        span {
-            font: var(--font-sora-display-large);
-        }
+      
     }
       & div:nth-child(3) {
-        display: flex;
-        gap: 1rem;
-        max-width: 30rem;
+        
+       
 
        & img {
             align-self: baseline;
@@ -49,6 +46,13 @@ grid-template-columns: repeat(2, 1fr);
         }
         
     }
+}
+
+
+#aside-02 {
+  .display-none-02 {
+    display: none;
+  }
 }
 
 
@@ -120,11 +124,7 @@ grid-template-columns: repeat(2, 1fr);
         }
         
     }
-      & div:nth-child(3) {
-
-
-        
-    }
+ 
 
 
 
@@ -160,5 +160,7 @@ grid-template-columns: repeat(2, 1fr);
           }
         }
 
+
+      
 
 

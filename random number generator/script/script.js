@@ -34,6 +34,7 @@ function rodarSorteio() {
     let resultado = document.querySelector(".menu-resultado");
     sorteio.classList.add("display-none");
     resultado.classList.remove("display-none");
+    
 
     const getRandomNumber = (min, max) => 
         Math.floor(Math.random() * (max - min + 1)) + min;
