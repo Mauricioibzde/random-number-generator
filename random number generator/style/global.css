@@ -42,7 +42,7 @@ p {
 }
 
 h3 {
-    font: var(--font-sora-display-small);
+    font: var(--font-sora-paragraph-large);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -61,15 +61,57 @@ input[type=number] {
             width: 100%;
             height: 4.5rem;
             border: none;
-            background-color: var(--background-gray);
+            background-color: var(--background-tertiary);
              border-radius: 1rem;
              cursor: pointer;
+        
              
 
             &   span  {
                 color: var(--content-secondary);
-                font: var(--font-sora-display-medium);
+                font: var( --font-sora-label-small);
              }
+        }
+
+         #button-fake {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--background-gray);
+             border-radius: 1rem;
+             height: 4.5rem;
+         }
+
+      
+
+
+
+       
+
+
+        
+             input {
+            width: 5rem;
+      
+            height: 4.5rem;
+            border: none;
+            background-color: var(--background-gray);
+             border-radius: 1rem;
+             text-align: center;
+
+             font: var(--font-sora-display-medium);
+             
+
+             
+
+          
+             
+        }
+
+
+
+        #btn-run {
+          width: 100%;
         }
 
 
