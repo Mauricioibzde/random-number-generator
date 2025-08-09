@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorteador de Números</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/index.css" />
+</head>
+
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header-logo">
+      <nav>
+        <a href="#">
+          <img src="assets/icon/logo.svg" alt="logo" />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Aside 1: Informações -->
+      <aside id="aside-01">
+       <div class="menu-sorteio">
+         <div>
+          <h3>Online - gratuito</h3>
+        </div>
+
+        <div>
+          <h1>Sorteador de números</h1>
+        </div>
+
+ <div id="como-funciona-div">
+         <div>
+          <img src="assets/icon/chat-icon.svg" alt="Ícone de chat" />
+          <p>
+            <span>Como funciona o sorteador de números?</span><br />
+            O sorteador utiliza um algoritmo de geração aleatória para criar
+            números dentro do intervalo especificado pelo usuário.
+          </p>
+        </div>
+
+        <div>
+          <img src="assets/icon/chat-icon.svg" alt="Ícone de chat" />
+          <p>
+            <span>Posso escolher o intervalo dos números?</span><br />
+            Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
+          </p>
+        </div>
+ </div>
+      </aside>
+
+      <!-- Aside 2: Controle de sorteio -->
+      <aside id="aside-02">
+       <div class="menu-hidden-div  ">
+         <div class="menu-sorteio-run">
+         <div>
+          <h2>Quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela.
+            É rápido e fácil!
+          </p>
+        </div>
+
+        <div class="animation-numeros-div">
+          <div>
+            <h3>números</h3>
+            <div id="button-fake">
+              <span>2</span>
+            </div>
+          </div>
+          <div>
+            <h3>de</h3>
+            <div class="input-wrapper">
+          <input type="number" id="amount-01" placeholder="01" />
+
+          </div>
+
+          </div>
+          <div>
+            <h3>até</h3>
+            <input id="amount-02" type="number" placeholder="100">
+          </div>
+        </div>
+
+        <div>
+          <button id="btn-run">
+            <span>Sortear</span>
+            <img src="" alt="" />
+          </button>
+        </div>
+       </div>
+       </div>
+
+       <div class="menu-resultado display-none ">
+        <h3>Resultado do sorteio</h3>
+        <p>1º resultado</p>
+        <div id="numeros-sorteados">
+        
+          
+        
+        </div>
+            <button id="btn-run-sortear-novamente">
+            <span>Sortear novamente</span>
+            <img src="" alt="" />
+          </button>
+       </div>
+
+        <div class="como-funciona-div display-none-02">
+         <div>
+          <img src="assets/icon/chat-icon.svg" alt="Ícone de chat" />
+          <p>
+            <span>Como funciona o sorteador de números?</span><br />
+            O sorteador utiliza um algoritmo de geração aleatória para criar
+            números dentro do intervalo especificado pelo usuário.
+          </p>
+        </div>
+
+        <div>
+          <img src="assets/icon/chat-icon.svg" alt="Ícone de chat" />
+          <p>
+            <span>Posso escolher o intervalo dos números?</span><br />
+            Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
+          </p>
+        </div>
+ </div>
+        
+      </aside>
+    </section>
+  </main>
+
+
+
+  
+</body>
+<script src="script/script.js"></script>
+
+</html>

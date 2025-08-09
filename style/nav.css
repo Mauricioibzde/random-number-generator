@@ -1,0 +1,11 @@
+header.header-logo {
+   
+    
+
+    & nav {
+         display: flex;
+         align-items: center;
+         padding-block: 1rem;
+          height: 10rem;
+    }
+}
