@@ -2,6 +2,9 @@
 
         @media (max-width:1070px) {
 
+
+        
+
             section.hero {
                 display: flex;
                 flex-direction: column;
@@ -25,6 +28,14 @@
     .animation-numeros-div {
        justify-content: center;
     }
+}
+
+main {
+  padding-inline: 3rem;
+}
+
+h1 {
+  font-size: 2.2rem;
 }
 
         }

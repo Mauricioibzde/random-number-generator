@@ -55,10 +55,7 @@
 
 }
 
-.container {
-    padding-inline: 12rem;
-    margin: 0 auto;
-}
+
 
 .grid {
     display: grid;

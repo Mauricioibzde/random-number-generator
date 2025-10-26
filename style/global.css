@@ -6,9 +6,8 @@
 }
 
 main {
-    height: 100dvh;
-    display: grid;
-    grid-template-rows: auto 1fr;
+   max-width: 80rem;
+   margin: 0 auto;
     
 }
 
@@ -30,6 +29,7 @@ text-transform: uppercase;
 h2 {
     font: var(  --font-roboto-flex-label-medium);
     text-transform: uppercase;
+    font-weight: 600;
 
 }
 
