@@ -38,9 +38,6 @@ body > * {
     
 }
 
-body {
-  overflow-y: hidden;
-}
 
 a {
   text-decoration: none;
