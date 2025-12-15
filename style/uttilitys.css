@@ -56,16 +56,3 @@
 }
 
 
-
-.grid {
-    display: grid;
-    
-}
-
-.column-flow {
-    grid-auto-flow: column;
-}
-
-.display-none {
-    display: none;
-}

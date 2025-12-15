@@ -1,0 +1,72 @@
+/* ================================
+   COMPONENT INPUT (LABEL FORA)
+================================ */
+
+/* Container apenas para layout */
+.component-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+/* Label simples, sem efeito */
+.component-input label {
+    font: var(--font-sora-label-small);
+    color: var(--content-secondary);
+}
+
+/* INPUT COM EFEITO */
+.component-input input[type="number"] {
+    width: 86px;
+    height: 60px;
+   
+
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    background-color: var(--background-tertiary);
+    color: var(--content-primary);
+
+    text-align: center;
+    font: var(--font-sora-display-medium);
+
+    box-sizing: border-box;
+
+    /* borda neutra (camuflada) */
+    box-shadow: inset 0 0 0 1px var(--background-tertiary);
+    transition: box-shadow 0.3s ease;
+
+    /* remove setinhas */
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* remove setinhas webkit */
+.component-input input::-webkit-inner-spin-button,
+.component-input input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ATIVA ANIMAÇÃO APENAS NO FOCO */
+.component-input input[type="number"]:focus {
+    animation: inputBorderMove 2s linear infinite;
+}
+
+/* ANIMAÇÃO DA BORDA */
+@keyframes inputBorderMove {
+    0% {
+        box-shadow: inset 0 0 0 1px #ff6ec4;
+    }
+    33% {
+        box-shadow: inset 0 0 0 1px #7873f5;
+    }
+    66% {
+        box-shadow: inset 0 0 0 1px #4ade80;
+    }
+    100% {
+        box-shadow: inset 0 0 0 1px #ff6ec4;
+    }
+}

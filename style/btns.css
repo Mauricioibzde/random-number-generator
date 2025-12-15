@@ -1,0 +1,84 @@
+/* ==============================
+   Botão principal
+============================== */
+.sort-form button {
+    position: relative;
+    width: 90%;
+    height: 3rem;
+    padding: 0 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--background-tertiary);
+    color: var(--content-primary);
+    font: var(--font-sora-label-medium);
+    cursor: pointer;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* espaço entre texto e seta */
+}
+
+/* ==============================
+   Seta dentro do botão
+============================== */
+.sort-form button span.arrow {
+    display: inline-block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ==============================
+   Borda uniforme com mask
+============================== */
+.sort-form button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 6px;
+
+    background: linear-gradient(90deg, var(--background-tertiary), var(--background-tertiary));
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+/* ==============================
+   Hover: gradiente animado
+============================== */
+.sort-form button:hover::before {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+    background-size: 300% 300%;
+    animation: borderMove 2s linear infinite;
+}
+
+/* ==============================
+   Hover: seta se move suavemente
+============================== */
+.sort-form button:hover span.arrow {
+    animation: arrowMoveSmooth 1.2s ease-in-out infinite alternate;
+}
+
+/* ==============================
+   Keyframes do gradiente
+============================== */
+@keyframes borderMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ==============================
+   Keyframes da seta
+============================== */
+@keyframes arrowMoveSmooth {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(2px); } /* movimento sutil */
+    100% { transform: translateX(0); }
+}
